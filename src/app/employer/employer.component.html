@@ -1,0 +1,10 @@
+<label>
+  Position
+  <input type="text" [formControl]="position">
+</label>
+<p>
+  Your response: {{ position.value }}
+</p>
+<p>
+  <button (click)="callingFunction()">Replace Data</button>
+</p>

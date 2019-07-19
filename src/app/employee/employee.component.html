@@ -1,0 +1,51 @@
+<form [formGroup]="bioSection" (ngSubmit)="callingFunction()">
+    <h3>Bio Details
+
+    </h3>
+  
+  <label>
+    First Name:
+    <input type="text" formControlName="firstName">
+  </label> <br>
+
+  <label>
+    Last Name:
+    <input type="text" formControlName="lastName">
+  </label> <br>
+
+  <label>
+    Age:
+    <input type="text" formControlName="age">
+  </label>
+
+  <div formGroupName="stackDetails">
+    <h3>Stack Details</h3>
+  
+    <label>
+      Stack:
+      <input type="text" formControlName="stack">
+    </label> <br>
+  
+    <label>
+      Experience:
+      <input type="text" formControlName="experience">
+    </label>
+  </div>
+
+  <div formGroupName="address">
+    <h3>Address</h3>
+  
+    <label>
+      Country:
+      <input type="text" formControlName="country">
+    </label> <br>
+  
+    <label>
+      City:
+      <input type="text" formControlName="city">
+    </label>
+  </div>
+
+  <button type="submit">Submit Application</button>
+
+</form>
